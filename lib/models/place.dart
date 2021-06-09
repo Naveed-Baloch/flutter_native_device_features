@@ -1,0 +1,23 @@
+import 'dart:io';
+
+class Place {
+  final String id;
+  final String title;
+  final PlaceLocation loation;
+  final File image;
+
+  Place(
+      {required this.id,
+      required this.title,
+      required this.loation,
+      required this.image});
+}
+
+class PlaceLocation {
+  final double latitude;
+  final double longitude;
+  final String address;
+
+ const PlaceLocation(
+      {required this.latitude, required this.longitude, required this.address});
+}
